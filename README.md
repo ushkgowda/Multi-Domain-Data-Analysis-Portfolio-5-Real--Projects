@@ -54,3 +54,35 @@ python analysis.py
 ```
 
 **Note:** The project uses simulated data. The findings are for demonstration purposes and do not represent real student performance.
+
+
+# Project 3: Weather Data Analysis
+
+Analysis of 1,461 days of weather data (2012–2015) for Seattle, USA, focusing on temperature trends, seasonal patterns, rainfall distribution and extreme weather events.
+
+## Contents
+- `project3_weather_analysis.ipynb`: complete analysis with data validation, visualizations and statistical tests
+- `analysis.py`: reusable functions for data analysis and visualization
+- `build_report.py`: generates the PDF report
+- `project3_weather_report.pdf`: 9-page report with executive summary and recommendations
+- `visualizations/`: generated charts and graphs
+- `datasets/seattle_weather.csv`: source dataset
+
+## Key findings
+- Average maximum and minimum temperatures were 16.4°C and 8.2°C.
+- August was the warmest month (20.4°C average), while January was the coolest (5.5°C).
+- Total precipitation over four years was 4,426 mm.
+- Winter received the highest rainfall (34.1%), while summer received only 7.8%.
+- Hot days increased from 9 in 2012 to 30 in 2015.
+- The wettest day recorded 55.9 mm of rainfall (March 15, 2015).
+- Seasonal changes were the strongest factor influencing weather patterns.
+
+## Run
+```bash
+pip install pandas numpy scipy matplotlib seaborn
+
+python analysis.py
+python build_report.py
+```
+
+**Note:** The analysis uses the public Seattle weather dataset from the vega-datasets repository. The dataset covers only four years and one location, so the results should not be treated as long-term climate predictions. Weather measurement units are inferred from the dataset.
