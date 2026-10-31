@@ -81,8 +81,73 @@ Analysis of 1,461 days of weather data (2012–2015) for Seattle, USA, focusing 
 ```bash
 pip install pandas numpy scipy matplotlib seaborn
 
+# Project 4: COVID-19 Trends Analysis
+
+Analysis of global and country-level COVID-19 cases and deaths across 197 countries and territories (January 2020 – March 2023), focusing on pandemic waves, case fatality rates and country comparisons.
+
+## Contents
+- `project4_covid19_analysis.ipynb`: complete analysis with data validation, visualizations and statistical tests
+- `analysis.py`: reusable functions for data processing, metrics and visualizations
+- `build_report.py`: generates the PDF report
+- `project4_covid19_report.pdf`: 9-page report with executive summary and recommendations
+- `visualizations/`: generated charts and graphs
+- `datasets/`: source COVID-19 dataset from Johns Hopkins University CSSE
+
+## Key findings
+- Analyzed 676.6 million confirmed cases and 6.88 million reported deaths.
+- Global reported case fatality ratio was approximately 1.02%.
+- The Omicron wave recorded the highest daily cases, reaching 3.4 million on 24 January 2022.
+- India reported 44.69 million cases and 530,779 deaths.
+- India's Delta wave was the deadliest, peaking at 391,232 daily cases.
+- Death surges generally followed case surges by approximately 14 days.
+- Reported deaths per 100 cases declined significantly over time.
+
+## Run
+```bash
+pip install pandas numpy matplotlib seaborn scipy
+
+python analysis.py
+python build_report.py
+```
+
+**Note:** The project uses the Johns Hopkins University CSSE COVID-19 dataset. It contains reported confirmed cases and deaths, not actual infection counts. The dataset ends on 9 March 2023.
+
 python analysis.py
 python build_report.py
 ```
 
 **Note:** The analysis uses the public Seattle weather dataset from the vega-datasets repository. The dataset covers only four years and one location, so the results should not be treated as long-term climate predictions. Weather measurement units are inferred from the dataset.
+
+# Project 5: Social Media Analytics
+
+Analysis of 1,500 social media posts across four platforms (Instagram, Facebook, X and LinkedIn), covering November 2025 to October 2026, focusing on engagement rates, audience growth and content performance.
+
+## Contents
+- `project5_social_media_analysis.ipynb`: complete analysis with data validation, visualizations and statistical tests
+- `analysis.py`: reusable functions for data processing, metrics and visualizations
+- `generate_data.py`: generates the simulated social media dataset (seed 7)
+- `build_report.py`: generates the PDF report
+- `project5_social_media_report.pdf`: 10-page report with executive summary and recommendations
+- `visualizations/`: generated charts and graphs
+- `datasets/`: simulated social media posts and follower data
+
+## Key findings
+- Analyzed 1,500 posts across four social media platforms.
+- Total impressions reached 32.4 million with 1.58 million engagements.
+- Instagram generated 90% of total engagements.
+- Carousels achieved the highest engagement rate (6.09%), followed by videos (4.54%).
+- Evening posts (6 PM–9 PM) performed better than late-night posts.
+- Giveaways increased engagement rates by approximately 78%.
+- LinkedIn recorded the highest follower growth (+41.1%).
+- The top 10% of posts generated 55% of total engagements.
+
+## Run
+```bash
+pip install pandas numpy matplotlib seaborn scipy
+
+python generate_data.py
+python analysis.py
+python build_report.py
+```
+
+**Note:** This project uses a simulated dataset with a seeded data generator (seed 7). The findings demonstrate social media analytics techniques and do not represent actual social media account performance.
