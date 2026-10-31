@@ -111,3 +111,37 @@ python build_report.py
 ```
 
 **Note:** The project uses the Johns Hopkins University CSSE COVID-19 dataset. It contains reported confirmed cases and deaths, not actual infection counts. The dataset ends on 9 March 2023.
+
+# Project 5: Social Media Analytics
+
+Analysis of 1,500 social media posts across four platforms (Instagram, Facebook, X and LinkedIn), covering November 2025 to October 2026, focusing on engagement rates, audience growth and content performance.
+
+## Contents
+- `project5_social_media_analysis.ipynb`: complete analysis with data validation, visualizations and statistical tests
+- `analysis.py`: reusable functions for data processing, metrics and visualizations
+- `generate_data.py`: generates the simulated social media dataset (seed 7)
+- `build_report.py`: generates the PDF report
+- `project5_social_media_report.pdf`: 10-page report with executive summary and recommendations
+- `visualizations/`: generated charts and graphs
+- `datasets/`: simulated social media posts and follower data
+
+## Key findings
+- Analyzed 1,500 posts across four social media platforms.
+- Total impressions reached 32.4 million with 1.58 million engagements.
+- Instagram generated 90% of total engagements.
+- Carousels achieved the highest engagement rate (6.09%), followed by videos (4.54%).
+- Evening posts (6 PM–9 PM) performed better than late-night posts.
+- Giveaways increased engagement rates by approximately 78%.
+- LinkedIn recorded the highest follower growth (+41.1%).
+- The top 10% of posts generated 55% of total engagements.
+
+## Run
+```bash
+pip install pandas numpy matplotlib seaborn scipy
+
+python generate_data.py
+python analysis.py
+python build_report.py
+```
+
+**Note:** This project uses a simulated dataset with a seeded data generator (seed 7). The findings demonstrate social media analytics techniques and do not represent actual social media account performance.
